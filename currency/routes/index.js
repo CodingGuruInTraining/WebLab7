@@ -8,13 +8,23 @@ router.get('/', function(req, res){
 });
 
 router.get('/convert', function(req, res){
-    var dollars = req.query.dollar_amount;
+    var input = req.query.dollar_amount;
     var convertTo = req.query.to_currency;
+    var convertFrom = req.query.from_currency;
 
-    var rate = exchangeRates[convertTo];
-    result = dollars * rate;
+    var rateToDollar = exchangeRates[convertTo];
+    var rateFromDollar = exchangeRates[convertFrom];
+    var result = input * rateToDollar;
 
-    res.render('results', { dollars : dollars, result: result, currency: convertTo})
+    if (rateToDollar < rateFromDollar) {
+        result = result * rateFromDollar;
+    }
+    else {
+        result = result / rateFromDollar;
+    }
+
+
+    res.render('results', { input : input, result: result, currencyTo: convertTo, currencyFrom: convertFrom})
 });
 
 module.exports = router;
