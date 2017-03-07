@@ -7,7 +7,7 @@ router.get('/', function(req, res){
     res.render('index');
 });
 
-router.get('/convert', function(req, res){
+router.get('/convert', function(req, res) {
     var input = req.query.dollar_amount;
     var convertTo = req.query.to_currency;
     var convertFrom = req.query.from_currency;
@@ -16,17 +16,25 @@ router.get('/convert', function(req, res){
     //     alert("Same currencies selected.")
     // }
 
-    var rateToDollar = exchangeRates[convertTo];
-    var rateFromDollar = exchangeRates[convertFrom];
+    var rateTo = exchangeRates[convertTo];
+    var rateFrom = exchangeRates[convertFrom];
 
 
+    // var fromAmount = input * rateFromDollar;
 
-    var fromAmount = input * rateFromDollar;
-    var toAmount = fromAmount / rateToDollar;
+    if (rateFrom > 1) {
+
+        var dollarAmount = input / rateFrom;
+    // var toAmount = fromAmount * rateToDollar;
+    }
+    else {
+        var dollarAmount = input * rateFrom;
+    }
 
 
-    var result = toAmount;
-
+    // if (rateTo > 1) {
+        var result = dollarAmount * rateTo;
+    // }
 
         // input / ((1/rateToDollar) * (1/rateFromDollar));
 
