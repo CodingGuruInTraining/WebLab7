@@ -12,8 +12,13 @@ router.get('/convert', function(req, res){
     var convertTo = req.query.to_currency;
     var convertFrom = req.query.from_currency;
 
+    // if (convertTo == convertFrom) {
+    //     alert("Same currencies selected.")
+    // }
+
     var rateToDollar = exchangeRates[convertTo];
     var rateFromDollar = exchangeRates[convertFrom];
+
 
 
     var fromAmount = input * rateFromDollar;
