@@ -15,7 +15,15 @@ router.get('/convert', function(req, res){
     var rateToDollar = exchangeRates[convertTo];
     var rateFromDollar = exchangeRates[convertFrom];
 
-    var result = input / ((1/convertTo) * (1/convertFrom));
+
+    var fromAmount = input * rateFromDollar;
+    var toAmount = fromAmount / rateToDollar;
+
+
+    var result = toAmount;
+
+
+        // input / ((1/rateToDollar) * (1/rateFromDollar));
 
     // var result = input * rateToDollar;
     //
