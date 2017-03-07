@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var exchangeRates = { 'EUR' : 0.9458, 'JPY' : 113.938, 'EP' : 17.4983 };
+var exchangeRates = { 'EUR' : 0.9458, 'JPY' : 113.938, 'EP' : 17.4983, 'INR' : 66.6376, 'CUP' : 26.5 };
 
 router.get('/', function(req, res){
     res.render('index');
