@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/currency/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -315,7 +315,7 @@
       <option name="presentableId" value="Default" />
       <updated>1487892591405</updated>
       <workItem from="1487892592733" duration="12025000" />
-      <workItem from="1488915983755" duration="3839000" />
+      <workItem from="1488915983755" duration="3874000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1487900492624</created>
@@ -352,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488918941954</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Success!">
+      <created>1488919854869</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1488919854869</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15864000" />
+    <option name="totallyTimeSpent" value="15899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +408,8 @@
     <MESSAGE value="might have calculations figured out" />
     <MESSAGE value="added text for alert, but crashes." />
     <MESSAGE value="tried adding if/else statements, but only works one way" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried adding if/else statements, but only works one way" />
+    <MESSAGE value="Success!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Success!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -536,7 +544,7 @@
     <entry file="file://$PROJECT_DIR$/currency/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
