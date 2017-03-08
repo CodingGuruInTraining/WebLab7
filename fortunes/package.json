@@ -1,11 +1,11 @@
 {
-  "name": "currency",
+  "name": "fortunes",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.14.1",
+    "express": "^4.15.2",
     "express-handlebars": "~3.0.0"
   },
-  "description": "Simple currency converter",
+  "description": "Simple fortunes website",
   "main": "app.js",
   "author": "Not Mark"
 }
