@@ -9,22 +9,25 @@ app.use(express.static(__dirname + '/public'));
 
 app.set('port', process.env.PORT || 3000);
 
+// Route to home page.
 app.get('/', function(req, res) {
     res.render('home');
-    // res.type('text/plain');
-    // res.send('Fortunes R Us');
 });
 
+// Route to about page.
 app.get('/about', function(req, res) {
     res.render('about');
-    // res.type('text/plain');
-    // res.send('All About Fortunes');
+    var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+    console.log(randomFortune);
+    // Sets what goes in the 'fortune' placeholder.
+    res.render('about', { fortune: randomFortune });
 });
 
 app.listen(app.get('port'), function() {
    console.log('Express started!');
 });
 
+// Creates static array.
 var fortunes = [
     "Conquer your fears or they will conquer you.",
     "Rivers need springs.",
