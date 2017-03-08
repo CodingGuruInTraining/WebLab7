@@ -4,6 +4,7 @@
     <list default="true" id="5659a640-5bf8-44d0-8b40-8adf8bfc6290" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fortunes/app.js" afterPath="$PROJECT_DIR$/fortunes/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fortunes/views/about.handlebars" afterPath="$PROJECT_DIR$/fortunes/views/about.handlebars" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fortunes/views/layouts/main.handlebars" afterPath="$PROJECT_DIR$/fortunes/views/layouts/main.handlebars" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fortunes/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="561">
+              <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -45,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.handlebars" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fortunes/views/layouts/main.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -68,8 +69,8 @@
       <file leaf-file-name="about.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fortunes/views/about.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,11 +124,11 @@
         <option value="$PROJECT_DIR$/fortunes/routes/index.js" />
         <option value="$PROJECT_DIR$/fortunes/routes/app.js" />
         <option value="$PROJECT_DIR$/fortunes/views/home.handlebars" />
-        <option value="$PROJECT_DIR$/fortunes/views/about.handlebars" />
         <option value="$PROJECT_DIR$/currency/package.json" />
         <option value="$PROJECT_DIR$/fortunes/package.json" />
-        <option value="$PROJECT_DIR$/fortunes/app.js" />
         <option value="$PROJECT_DIR$/fortunes/views/layouts/main.handlebars" />
+        <option value="$PROJECT_DIR$/fortunes/app.js" />
+        <option value="$PROJECT_DIR$/fortunes/views/about.handlebars" />
       </list>
     </option>
   </component>
@@ -413,7 +414,7 @@
       <updated>1487892591405</updated>
       <workItem from="1487892592733" duration="12025000" />
       <workItem from="1488915983755" duration="6922000" />
-      <workItem from="1488926771724" duration="3613000" />
+      <workItem from="1488926771724" duration="4178000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1487900492624</created>
@@ -485,11 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488940909839</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added static router and started adding image to template.">
+      <created>1488941492838</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1488941492838</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22560000" />
+    <option name="totallyTimeSpent" value="23125000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,7 +547,8 @@
     <MESSAGE value="added additional drop-down options" />
     <MESSAGE value="started working on advanced part. I decided to try keeping everything in the same project and see how it goes." />
     <MESSAGE value="set up required things for home use and tested connections with both currency and fortunes projects." />
-    <option name="LAST_COMMIT_MESSAGE" value="set up required things for home use and tested connections with both currency and fortunes projects." />
+    <MESSAGE value="added static router and started adding image to template." />
+    <option name="LAST_COMMIT_MESSAGE" value="added static router and started adding image to template." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -780,14 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fortunes/views/about.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/currency/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -796,18 +797,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fortunes/views/layouts/main.handlebars">
+    <entry file="file://$PROJECT_DIR$/fortunes/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="561">
+          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fortunes/app.js">
+    <entry file="file://$PROJECT_DIR$/fortunes/views/about.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fortunes/views/layouts/main.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
