@@ -5,16 +5,20 @@ var handlebars = require('express-handlebars').create({ defaultLayout:'main' });
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
+app.use(express.static(__dirname + '/public'));
+
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res) {
-    res.type('text/plain');
-    res.send('Fortunes R Us');
+    res.render('home');
+    // res.type('text/plain');
+    // res.send('Fortunes R Us');
 });
 
 app.get('/about', function(req, res) {
-    res.type('text/plain');
-    res.send('All About Fortunes');
+    res.render('about');
+    // res.type('text/plain');
+    // res.send('All About Fortunes');
 });
 
 app.listen(app.get('port'), function() {
